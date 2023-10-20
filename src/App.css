@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+}
+
+#root {
+	height: 100vh;
+}
+
+.tracker-main {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.input-side {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 30px;
+	background-image: url('pattern-bg-desktop.png');
+}
+.map-side {
+	display: grid;
+	place-content: center;
+	flex-grow: 3;
+	position: relative;
+	background-color: bisque;
+	position: relative;
+}
+.input-side h1 {
+	color: white;
+	font-weight: 500;
+	margin-top: 30px;
+}
+.ip-input {
+	height: 50px;
+	width: 500px;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 15px;
+	color: hsl(0, 0%, 59%);
+	font-size: 18px;
+}
+.ip-input::placeholder {
+	color: hsl(0, 0%, 59%);
+}
+.ip-form {
+	display: flex;
+	position: relative;
+}
+.ip-form button {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 50px;
+	border: none;
+	background-color: hsl(0, 0%, 17%);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.ip-form button:hover {
+	background-color: hsl(0, 0%, 17%, 90%);
+}
+.info-display {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	background-color: white;
+	border-radius: 20px;
+	position: absolute;
+	translate: 20% -50%;
+}
+.divider {
+	height: 90px;
+	width: 1px;
+	background-color: lightgray;
+	margin-top: 40px;
+}
+.info-box {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	flex-grow: 1;
+	text-wrap: wrap;
+	max-height: fit-content;
+	width: 250px;
+	padding: 35px;
+}
+.info-box p {
+	font-size: 13px;
+	font-weight: 500;
+	color: hsl(0, 0%, 59%);
+	letter-spacing: 1px;
+}
+.info-box h1 {
+	font-size: 26px;
+	font-weight: 500;
+	color: hsl(0, 0%, 17%);
+	max-height: 100px;
+}
